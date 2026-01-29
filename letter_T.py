@@ -1,6 +1,8 @@
 import turtle
 def drawT(startx, starty, turtle: turtle.Turtle):
     t = turtle
+    
+    t.goto(startx, starty)
     t.fillcolor("lightblue")
     t.begin_fill()
     t.forward(100)
