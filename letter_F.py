@@ -4,15 +4,12 @@ import turtle
 # screen = turtle.Screen()
 # screen.bgcolor("white")
 
-t = turtle.Turtle()
-t.speed(5)
-t.pencolor("black")
-t.pensize(5)
 
 
 
 #function to draw a F letter
-def drawF(startx, starty):
+def drawF(startx, starty, turtle: turtle.Turtle):
+    t = turtle
     t.goto(startx, starty)
     #drawing straight F
     t.left(90)

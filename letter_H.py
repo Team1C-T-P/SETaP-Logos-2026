@@ -1,9 +1,8 @@
 import turtle
-t = turtle.Turtle()
-t.color("black", "white")
-t.pensize(5)
 
-def drawH(startx, starty):
+
+def drawH(startx, starty, turtle: turtle.Turtle):
+    t = turtle
     t.goto(startx, starty)
     # Draw the left vertical bar
     t.left(90)

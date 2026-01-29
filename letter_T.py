@@ -1,10 +1,6 @@
 import turtle
-t = turtle.Turtle()
-def drawT(startx, starty):
-    t.penup()
-    t.goto(startx, starty)
-    t.setheading(0)
-    t.pendown()
+def drawT(startx, starty, turtle: turtle.Turtle):
+    t = turtle
     t.fillcolor("lightblue")
     t.begin_fill()
     t.forward(100)
@@ -23,8 +19,6 @@ def drawT(startx, starty):
     t.right(90)
     t.forward(15)
     t.end_fill()
-
-t = turtle.Turtle()
-t.pensize(5)   
+ 
 
 turtle.done()

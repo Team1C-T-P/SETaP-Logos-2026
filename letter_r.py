@@ -1,10 +1,8 @@
 import turtle
 
-t = turtle.Turtle()
-t.speed(5)
-t.pensize(5)
 
-def drawR(startx, starty):
+def drawR(startx, starty, turtle: turtle.Turtle):
+    t = turtle
     t.penup()
     t.goto(startx, starty)
     t.pendown()
@@ -38,6 +36,3 @@ def drawR(startx, starty):
     t.right(90)
     t.forward(20)
     t.circle(-25, 165)
-
-t.hideturtle()
-turtle.done()

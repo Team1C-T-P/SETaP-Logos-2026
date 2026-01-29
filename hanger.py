@@ -1,8 +1,8 @@
-import turtle as t
+import turtle
 
 
-def drawHanger(startx, starty):
- 
+def drawHanger(startx, starty, turtle: turtle.Turtle):
+    t = turtle
     
     t.penup()
     t.goto(startx, starty)
