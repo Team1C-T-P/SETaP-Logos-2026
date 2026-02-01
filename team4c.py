@@ -35,7 +35,7 @@ def drawR(startx, starty):
     t.fillcolor("lightblue")
     t.begin_fill()
 
-    # Part 2: Outer Boundary (Bottom -> Left -> Top -> Outer Loop)
+    
     t.setheading(180)
     t.forward(10)
     t.right(90)
@@ -44,29 +44,27 @@ def drawR(startx, starty):
     t.forward(20)
     t.circle(-25, 165)
 
-    # Bridge to Top of Outer Leg
-    # Calculated approximate position of where Part 1 ended
-    # The gap is small, we just draw a line to connect
+    
     target_x = startx + 1.34
     target_y = starty + 55
     t.goto(target_x, target_y)
 
-    # Part 1 Reversed: Outer Leg -> Inner Leg -> Inner Loop -> Stem Right Side
-    t.setheading(300) # Down outer leg
+
+    t.setheading(300) 
     t.forward(65)
     
-    t.setheading(30)  # Bottom of leg
+    t.setheading(30)  
     t.forward(10)
     
-    t.setheading(120) # Up inner leg
+    t.setheading(120) 
     t.forward(65)
     
-    t.setheading(0)   # Prepare for arc
-    t.circle(15, 180) # Arc back to stem top
+    t.setheading(0)  
+    t.circle(15, 180) 
     
-    t.forward(10)     # To stem corner
+    t.forward(10)    
     t.left(90)
-    t.forward(90)     # Down stem right side
+    t.forward(90)     
 
     t.end_fill()
 
@@ -78,7 +76,7 @@ def drawY(start_x,start_y):
     t.setheading(0)
     t.pendown()
     
-    #start_x, start_y = x, y  # Save starting position
+   
     
     t.left(135)
     t.forward(50)
@@ -107,7 +105,7 @@ def drawY(start_x,start_y):
     t.left(45)
     t.forward(50)
 
-    t.goto(start_x, start_y)  # Explicitly return to starting position
+    t.goto(start_x, start_y)  
     
     t.end_fill()
     t.penup()
@@ -120,7 +118,7 @@ def drawH(startx, starty):
     t.setheading(360)
     t.fillcolor("lightblue")
     t.begin_fill()
-    # Draw the left vertical bar
+    
     t.left(90)
     t.forward(100)
     t.right(90)
@@ -128,13 +126,13 @@ def drawH(startx, starty):
     t.right(90)
     t.forward(40)
 
-    # Draw the bridge
+    
     t.left(90)
     t.forward(40)
     t.left(90)
     t.forward(40)
 
-    # Draw the right vertical bar
+   
     t.right(90)
     t.forward(20)
     t.right(90)
@@ -144,7 +142,7 @@ def drawH(startx, starty):
     t.right(90)
     t.forward(40)
 
-    # Complete the bridge and bottom
+   
     t.left(90)
     t.forward(40)
     t.left(90)
@@ -161,31 +159,29 @@ def drawF(startx, starty):
     t.fillcolor("lightblue")
     t.begin_fill()
     t.setheading(360)
-    #drawing straight F
+   
     t.left(90)
     t.forward(100)
-    #drawing top horizontal line
+   
     t.right(90)
     t.forward(70)
-    #go down
+    
     t.right(90)
     t.forward(20)
-    #drawing middle horizontal line
+    
     t.right(90)
     t.forward(50)
-    #go back to vertical line
+    
     t.left(90)
     t.forward(20)
-    #drawing bottom horizontal line
     t.left(90)
     t.forward(40)
-    #go down
+    
     t.right(90)
     t.forward(20)
-    #drawing bottom horizontal line
     t.right(90)
     t.forward(40)
-    #return to starting position
+    
     t.left(90)
     t.forward(40)
     t.right(90)
